@@ -1,0 +1,9 @@
+[     7.197] Warning: The directory "/usr/share/fonts/X11/cyrillic" does not exist.
+[     7.197] Warning: The directory "/usr/share/fonts/X11/100dpi/" does not exist.
+[     7.197] Warning: The directory "/usr/share/fonts/X11/75dpi/" does not exist.
+[     7.197] Warning: The directory "/usr/share/fonts/X11/100dpi" does not exist.
+[     7.197] Warning: The directory "/usr/share/fonts/X11/75dpi" does not exist.
+[     7.211] Warning: Falling back to old probe method for modesetting
+[     7.211] Warning: Falling back to old probe method for fbdev
+[     7.211] Warning: Falling back to old probe method for vesa
+
