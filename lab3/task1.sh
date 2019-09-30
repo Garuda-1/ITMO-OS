@@ -6,7 +6,7 @@ then
 	exit 0
 fi
 
-ps aux | tail -n +2 | awk '{print $1 " " $2 ":" $11}' | grep "^$1 " |
-awk '{print $2}' > task1.out
+ps ax -U $1 | tail -n +2 |
+awk '{printf "%s:", $1; for(i=5;i<=NF;i++) printf "%s ", $i; print ""}' > task1.out
 
 wc -l < task1.out
