@@ -1,374 +1,137 @@
-1:/sbin/init splash 
-2:[kthreadd] 
-4:[kworker/0:0H] 
-6:[mm_percpu_wq] 
-7:[ksoftirqd/0] 
-8:[rcu_sched] 
-9:[rcu_bh] 
-10:[migration/0] 
-11:[watchdog/0] 
-12:[cpuhp/0] 
-13:[cpuhp/1] 
-14:[watchdog/1] 
-15:[migration/1] 
-16:[ksoftirqd/1] 
-18:[kworker/1:0H] 
-19:[cpuhp/2] 
-20:[watchdog/2] 
-21:[migration/2] 
-22:[ksoftirqd/2] 
-24:[kworker/2:0H] 
-25:[cpuhp/3] 
-26:[watchdog/3] 
-27:[migration/3] 
-28:[ksoftirqd/3] 
-30:[kworker/3:0H] 
-31:[cpuhp/4] 
-32:[watchdog/4] 
-33:[migration/4] 
-34:[ksoftirqd/4] 
-36:[kworker/4:0H] 
-37:[cpuhp/5] 
-38:[watchdog/5] 
-39:[migration/5] 
-40:[ksoftirqd/5] 
-42:[kworker/5:0H] 
-43:[cpuhp/6] 
-44:[watchdog/6] 
-45:[migration/6] 
-46:[ksoftirqd/6] 
-48:[kworker/6:0H] 
-49:[cpuhp/7] 
-50:[watchdog/7] 
-51:[migration/7] 
-52:[ksoftirqd/7] 
-54:[kworker/7:0H] 
-55:[kdevtmpfs] 
-56:[netns] 
-57:[rcu_tasks_kthre] 
-58:[kauditd] 
-61:[khungtaskd] 
-62:[oom_reaper] 
-63:[writeback] 
-64:[kcompactd0] 
-65:[ksmd] 
-66:[khugepaged] 
-67:[crypto] 
-68:[kintegrityd] 
-69:[kblockd] 
-76:[ata_sff] 
-77:[md] 
-78:[edac-poller] 
-79:[devfreq_wq] 
-81:[watchdogd] 
-84:[kswapd0] 
-86:[ecryptfs-kthrea] 
-128:[kthrotld] 
-129:[acpi_thermal_pm] 
-134:[ipv6_addrconf] 
-143:[kstrp] 
-160:[charger_manager] 
-211:[scsi_eh_0] 
-212:[scsi_tmf_0] 
-213:[scsi_eh_1] 
-214:[scsi_tmf_1] 
-215:[scsi_eh_2] 
-216:[scsi_tmf_2] 
-219:[i915/signal:0] 
-220:[i915/signal:1] 
-221:[i915/signal:2] 
-222:[i915/signal:4] 
-235:[kworker/1:1H] 
-352:[jbd2/sda3-8] 
-353:[ext4-rsv-conver] 
-400:/lib/systemd/systemd-journald 
-403:/opt/google/chrome/chrome --type=renderer --field-trial-handle=1046125550556321752,1972397289871081168,131072 --service-pipe-token=15555175300193876524 --lang=ru --enable-crash-reporter=18c08150-3029-47f9-af6d-2f63424e8d04, --enable-offline-auto-reload --enable-offline-auto-reload-visible-only --num-raster-threads=4 --enable-main-frame-before-activation --service-request-channel-token=15555175300193876524 --renderer-client-id=2247 --no-v8-untrusted-code-mitigations --shared-files=v8_context_snapshot_data:100,v8_natives_data:101 
-422:/lib/systemd/systemd-udevd 
-424:[kworker/0:1H] 
-425:[kworker/2:1H] 
-427:[kworker/4:1H] 
-429:[loop0] 
-434:[loop1] 
-435:[kworker/6:1H] 
-436:[kworker/3:1H] 
-446:[loop2] 
-447:[loop3] 
-460:[loop4] 
-461:[kworker/5:1H] 
-462:[loop5] 
-463:[loop6] 
-470:[loop7] 
-471:[kworker/7:1H] 
-472:[loop8] 
-488:[loop9] 
-494:[loop10] 
-495:[loop11] 
-496:[loop12] 
-498:[loop13] 
-499:[loop14] 
-500:[loop15] 
-502:[loop16] 
-503:[loop17] 
-504:[irq/98-smo8800] 
-505:[loop18] 
-506:[loop19] 
-507:[loop20] 
-508:[loop21] 
-510:[loop23] 
-511:[loop24] 
-530:[loop25] 
-575:[irq/51-MSFT0001] 
-582:[cfg80211] 
-590:[irq/128-iwlwifi] 
-865:/lib/systemd/systemd-resolved 
-871:/lib/systemd/systemd-timesyncd 
-1055:/usr/sbin/thermald --no-daemon --dbus-enable 
-1058:/usr/bin/dbus-daemon --system --address=systemd: --nofork --nopidfile --systemd-activation --syslog-only 
-1076:/lib/systemd/systemd-logind 
-1086:/usr/sbin/smartd -n 
-1088:/usr/sbin/cron -f 
-1092:avahi-daemon: running [moebius.local] 
-1104:/usr/lib/accountsservice/accounts-daemon 
-1113:/usr/sbin/NetworkManager --no-daemon 
-1115:avahi-daemon: chroot helper 
-1116:/usr/bin/python3 /usr/bin/networkd-dispatcher --run-startup-triggers 
-1120:/usr/sbin/irqbalance --foreground 
-1122:/usr/lib/bluetooth/bluetoothd 
-1124:/usr/lib/snapd/snapd 
-1125:/usr/sbin/ModemManager --filter-policy=strict 
-1127:/usr/lib/udisks2/udisksd 
-1129:/usr/sbin/rsyslogd -n 
-1134:/usr/sbin/acpid 
-1177:/usr/lib/policykit-1/polkitd --no-debug 
-1200:/usr/lib/colord/colord 
-1215:/usr/sbin/sshd -D 
-1222:/usr/sbin/gdm3 
-1233:/usr/bin/python3 /usr/share/unattended-upgrades/unattended-upgrade-shutdown --wait-for-signal 
-1240:gdm-session-worker [pam/gdm-launch-environment] 
-1275:/lib/systemd/systemd --user 
-1277:(sd-pam) 
-1298:/usr/lib/gdm3/gdm-wayland-session gnome-session --autostart /usr/share/gdm/greeter/autostart 
-1301:/usr/bin/dbus-daemon --session --address=systemd: --nofork --nopidfile --systemd-activation --syslog-only 
-1307:/usr/lib/gnome-session/gnome-session-binary --autostart /usr/share/gdm/greeter/autostart 
-1337:/usr/bin/gnome-shell 
-1350:/usr/lib/upower/upowerd 
-1411:/usr/bin/Xwayland :1024 -rootless -terminate -accessx -core -listen 4 -listen 5 -displayfd 6 
-1423:/usr/lib/at-spi2-core/at-spi-bus-launcher 
-1428:/usr/bin/dbus-daemon --config-file=/usr/share/defaults/at-spi2/accessibility.conf --nofork --print-address 3 
-1430:/usr/lib/at-spi2-core/at-spi2-registryd --use-gnome-session 
-1434:/usr/bin/pulseaudio --daemonize=no 
-1435:/usr/lib/rtkit/rtkit-daemon 
-1484:ibus-daemon --xim --panel disable 
-1487:/usr/lib/ibus/ibus-dconf 
-1489:/usr/lib/ibus/ibus-x11 --kill-daemon 
-1492:/usr/lib/ibus/ibus-portal 
-1500:/usr/libexec/xdg-permission-store 
-1508:/usr/lib/x86_64-linux-gnu/boltd 
-1509:/usr/lib/packagekit/packagekitd 
-1510:/usr/lib/gnome-settings-daemon/gsd-xsettings 
-1515:/usr/lib/gnome-settings-daemon/gsd-a11y-settings 
-1517:/usr/lib/gnome-settings-daemon/gsd-clipboard 
-1518:/usr/lib/gnome-settings-daemon/gsd-color 
-1522:/usr/lib/gnome-settings-daemon/gsd-datetime 
-1523:/usr/lib/gnome-settings-daemon/gsd-housekeeping 
-1524:/usr/lib/gnome-settings-daemon/gsd-keyboard 
-1528:/usr/lib/gnome-settings-daemon/gsd-media-keys 
-1530:/usr/lib/gnome-settings-daemon/gsd-mouse 
-1535:/usr/lib/gnome-settings-daemon/gsd-power 
-1539:/usr/lib/gnome-settings-daemon/gsd-print-notifications 
-1540:/usr/lib/gnome-settings-daemon/gsd-rfkill 
-1541:/usr/lib/gnome-settings-daemon/gsd-screensaver-proxy 
-1545:/usr/lib/gnome-settings-daemon/gsd-sharing 
-1548:/usr/lib/gnome-settings-daemon/gsd-smartcard 
-1551:/usr/lib/gnome-settings-daemon/gsd-sound 
-1557:/usr/lib/gnome-settings-daemon/gsd-wacom 
-1564:/usr/lib/ibus/ibus-engine-simple 
-1764:/usr/bin/whoopsie -f 
-1769:/usr/sbin/kerneloops --test 
-1771:/usr/sbin/kerneloops 
-1773:/opt/teamviewer/tv_bin/teamviewerd -d 
-1902:gdm-session-worker [pam/gdm-password] 
-1908:/lib/systemd/systemd --user 
-1909:(sd-pam) 
-1920:/usr/lib/gvfs/gvfsd-network --spawner :1.22 /org/gtk/gvfs/exec_spaw/5 
-1922:/usr/bin/gnome-keyring-daemon --daemonize --login 
-1926:/usr/lib/gdm3/gdm-x-session --run-script env GNOME_SHELL_SESSION_MODE=ubuntu gnome-session --session=ubuntu 
-1928:/usr/lib/xorg/Xorg vt2 -displayfd 3 -auth /run/user/1001/gdm/Xauthority -background none -noreset -keeptty -verbose 3 
-1936:/usr/bin/dbus-daemon --session --address=systemd: --nofork --nopidfile --systemd-activation --syslog-only 
-1939:/usr/lib/gnome-session/gnome-session-binary --session=ubuntu 
-1949:/usr/lib/gvfs/gvfsd-dnssd --spawner :1.22 /org/gtk/gvfs/exec_spaw/7 
-2044:/usr/bin/ssh-agent /usr/bin/im-launch env GNOME_SHELL_SESSION_MODE=ubuntu gnome-session --session=ubuntu 
-2047:/usr/lib/at-spi2-core/at-spi-bus-launcher 
-2052:/usr/bin/dbus-daemon --config-file=/usr/share/defaults/at-spi2/accessibility.conf --nofork --print-address 3 
-2054:/usr/lib/at-spi2-core/at-spi2-registryd --use-gnome-session 
-2068:/usr/lib/gvfs/gvfsd 
-2073:/usr/lib/gvfs/gvfsd-fuse /run/user/1001/gvfs -f -o big_writes 
-2090:/usr/bin/gnome-shell 
-2100:/usr/bin/pulseaudio --start --log-target=syslog 
-2117:[krfcommd] 
-2119:ibus-daemon --xim --panel disable 
-2123:/usr/lib/ibus/ibus-dconf 
-2125:/usr/lib/ibus/ibus-x11 --kill-daemon 
-2127:/usr/lib/ibus/ibus-portal 
-2137:/usr/libexec/xdg-permission-store 
-2142:/usr/lib/gnome-shell/gnome-shell-calendar-server 
-2146:/usr/lib/evolution/evolution-source-registry 
-2154:/usr/lib/gnome-online-accounts/goa-daemon 
-2161:/usr/lib/gvfs/gvfs-udisks2-volume-monitor 
-2170:/usr/lib/gnome-online-accounts/goa-identity-service 
-2175:/usr/lib/gvfs/gvfs-mtp-volume-monitor 
-2179:/usr/lib/gvfs/gvfs-afc-volume-monitor 
-2184:/usr/lib/gvfs/gvfs-gphoto2-volume-monitor 
-2188:/usr/lib/gvfs/gvfs-goa-volume-monitor 
-2199:/usr/lib/gnome-settings-daemon/gsd-power 
-2200:/usr/lib/gnome-settings-daemon/gsd-print-notifications 
-2201:/usr/lib/gnome-settings-daemon/gsd-rfkill 
-2202:/usr/lib/gnome-settings-daemon/gsd-screensaver-proxy 
-2203:/usr/lib/gnome-settings-daemon/gsd-sharing 
-2208:/usr/lib/gnome-settings-daemon/gsd-xsettings 
-2212:/usr/lib/gnome-settings-daemon/gsd-wacom 
-2216:/usr/lib/gnome-settings-daemon/gsd-smartcard 
-2219:/usr/lib/gnome-settings-daemon/gsd-sound 
-2229:/usr/lib/gnome-settings-daemon/gsd-clipboard 
-2232:/usr/lib/gnome-settings-daemon/gsd-a11y-settings 
-2236:/usr/lib/gnome-settings-daemon/gsd-datetime 
-2240:/usr/lib/gnome-settings-daemon/gsd-color 
-2241:/usr/lib/gnome-settings-daemon/gsd-keyboard 
-2243:/usr/lib/gnome-settings-daemon/gsd-housekeeping 
-2245:/usr/lib/gnome-settings-daemon/gsd-mouse 
-2250:/usr/lib/gnome-settings-daemon/gsd-media-keys 
-2279:/usr/lib/gnome-settings-daemon/gsd-printer 
-2285:/usr/lib/gnome-disk-utility/gsd-disk-utility-notify 
-2286:/usr/lib/x86_64-linux-gnu/indicator-messages/indicator-messages-service 
-2303:nautilus-desktop 
-2310:/usr/share/skypeforlinux/skypeforlinux --executed-from=/home/oktet --pid=2290 
-2329:/usr/lib/gvfs/gvfsd-trash --spawner :1.22 /org/gtk/gvfs/exec_spaw/0 
-2337:/usr/lib/evolution/evolution-calendar-factory 
-2341:/usr/share/skypeforlinux/skypeforlinux --type=zygote --no-sandbox 
-2358:/usr/lib/dconf/dconf-service 
-2361:/usr/lib/ibus/ibus-engine-simple 
-2373:/usr/lib/evolution/evolution-calendar-factory-subprocess --factory all --bus-name org.gnome.evolution.dataserver.Subprocess.Backend.Calendarx2337x2 --own-path /org/gnome/evolution/dataserver/Subprocess/Backend/Calendar/2337/2 
-2382:/usr/lib/evolution/evolution-addressbook-factory 
-2395:/usr/lib/evolution/evolution-addressbook-factory-subprocess --factory all --bus-name org.gnome.evolution.dataserver.Subprocess.Backend.AddressBookx2382x2 --own-path /org/gnome/evolution/dataserver/Subprocess/Backend/AddressBook/2382/2 
-2407:/usr/lib/x86_64-linux-gnu/gconf/gconfd-2 
-2434:/usr/share/skypeforlinux/skypeforlinux --type=gpu-process --no-sandbox --supports-dual-gpus=false --gpu-driver-bug-workarounds=1,9,27,70,84 --disable-gl-extensions=GL_KHR_blend_equation_advanced GL_KHR_blend_equation_advanced_coherent --disable-accelerated-video-decode --gpu-vendor-id=0x8086 --gpu-device-id=0x5917 --gpu-driver-vendor --gpu-driver-version --gpu-driver-date --service-request-channel-token=4E2F5591F2CE5D0F3D0E48B845FB56CF 
-2447:/usr/share/skypeforlinux/skypeforlinux --type=renderer --ms-disable-indexeddb-transaction-timeout --no-sandbox --service-pipe-token=8086CFEF85F0377E6174DFFC5E8FF0BF --lang=ru --app-path=/usr/share/skypeforlinux/resources/app.asar --node-integration=false --webview-tag=true --no-sandbox --preload=/usr/share/skypeforlinux/resources/app.asar/Preload.js --context-id=2 --enable-pinch --num-raster-threads=4 --enable-main-frame-before-activation --content-image-texture-target=0,0,3553;0,1,3553;0,2,3553;0,3,3553;0,4,3553;0,5,3553;0,6,3553;0,7,3553;0,8,3553;0,9,3553;0,10,3553;0,11,3553;0,12,3553;0,13,3553;0,14,3553;0,15,3553;0,16,3553;0,17,3553;1,0,3553;1,1,3553;1,2,3553;1,3,3553;1,4,3553;1,5,3553;1,6,3553;1,7,3553;1,8,3553;1,9,3553;1,10,3553;1,11,3553;1,12,3553;1,13,3553;1,14,3553;1,15,3553;1,16,3553;1,17,3553;2,0,3553;2,1,3553;2,2,3553;2,3,3553;2,4,3553;2,5,3553;2,6,3553;2,7,3553;2,8,3553;2,9,3553;2,10,3553;2,11,3553;2,12,3553;2,13,3553;2,14,3553;2,15,3553;2,16,3553;2,17,3553;3,0,3553;3,1,3553;3,2,3553;3,3,3553;3,4,3553;3,5,3553;3,6,3553;3,7,3553;3,8,3553;3,9,3553;3,10,3553;3,11,3553;3,12,3553;3,13,3553;3,14,3553;3,15,3553;3,16,3553;3,17,3553;4,0,3553;4,1,3553;4,2,3553;4,3,3553;4,4,3553;4,5,3553;4,6,3553;4,7,3553;4,8,3553;4,9,3553;4,10,3553;4,11,3553;4,12,3553;4,13,3553;4,14,3553;4,15,3553;4,16,3553;4,17,3553 --disable-accelerated-video-decode --enable-gpu-async-worker-context --service-request-channel-token=8086CFEF85F0377E6174DFFC5E8FF0BF --renderer-client-id=4 --shared-files=v8_natives_data:100,v8_snapshot_data:101 --skype-process-type=Main 
-2474:/usr/lib/gvfs/gvfsd-metadata 
-2519:zeitgeist-datahub 
-2528:/usr/bin/zeitgeist-daemon 
-2536:/usr/lib/zeitgeist/zeitgeist/zeitgeist-fts 
-2570:/usr/bin/gnome-software --gapplication-service 
-2573:update-notifier 
-2591:/usr/lib/fwupd/fwupd 
-2726:/usr/lib/deja-dup/deja-dup-monitor 
-2735:/opt/google/chrome/chrome 
-2742:cat 
-2743:cat 
-2749:/opt/google/chrome/chrome --type=zygote --enable-crash-reporter=18c08150-3029-47f9-af6d-2f63424e8d04, 
-2750:/opt/google/chrome/nacl_helper 
-2753:/opt/google/chrome/chrome --type=zygote --enable-crash-reporter=18c08150-3029-47f9-af6d-2f63424e8d04, 
-2777:/opt/google/chrome/chrome --type=gpu-process --field-trial-handle=1046125550556321752,1972397289871081168,131072 --enable-crash-reporter=18c08150-3029-47f9-af6d-2f63424e8d04, --gpu-preferences=KAAAAAAAAACAAACAAQAAAAAAAAAAAGAAAAAAAAAAAAAIAAAAAAAAAAgAAAAAAAAA --enable-crash-reporter=18c08150-3029-47f9-af6d-2f63424e8d04, --service-request-channel-token=15803315171146645399 
-2997:/opt/google/chrome/chrome --type=renderer --field-trial-handle=1046125550556321752,1972397289871081168,131072 --service-pipe-token=4690220838732647396 --lang=ru --enable-crash-reporter=18c08150-3029-47f9-af6d-2f63424e8d04, --extension-process --enable-offline-auto-reload --enable-offline-auto-reload-visible-only --num-raster-threads=4 --enable-main-frame-before-activation --service-request-channel-token=4690220838732647396 --renderer-client-id=4 --no-v8-untrusted-code-mitigations --shared-files=v8_context_snapshot_data:100,v8_natives_data:101 
-3014:/opt/google/chrome/chrome --type=renderer --field-trial-handle=1046125550556321752,1972397289871081168,131072 --service-pipe-token=18356595381809342363 --lang=ru --enable-crash-reporter=18c08150-3029-47f9-af6d-2f63424e8d04, --extension-process --enable-offline-auto-reload --enable-offline-auto-reload-visible-only --num-raster-threads=4 --enable-main-frame-before-activation --service-request-channel-token=18356595381809342363 --renderer-client-id=5 --no-v8-untrusted-code-mitigations --shared-files=v8_context_snapshot_data:100,v8_natives_data:101 
-3023:/opt/google/chrome/chrome --type=renderer --field-trial-handle=1046125550556321752,1972397289871081168,131072 --service-pipe-token=16441754596900677160 --lang=ru --enable-crash-reporter=18c08150-3029-47f9-af6d-2f63424e8d04, --extension-process --enable-offline-auto-reload --enable-offline-auto-reload-visible-only --num-raster-threads=4 --enable-main-frame-before-activation --service-request-channel-token=16441754596900677160 --renderer-client-id=6 --no-v8-untrusted-code-mitigations --shared-files=v8_context_snapshot_data:100,v8_natives_data:101 
-3032:/opt/google/chrome/chrome --type=renderer --field-trial-handle=1046125550556321752,1972397289871081168,131072 --service-pipe-token=15716007771466805148 --lang=ru --enable-crash-reporter=18c08150-3029-47f9-af6d-2f63424e8d04, --extension-process --enable-offline-auto-reload --enable-offline-auto-reload-visible-only --num-raster-threads=4 --enable-main-frame-before-activation --service-request-channel-token=15716007771466805148 --renderer-client-id=7 --no-v8-untrusted-code-mitigations --shared-files=v8_context_snapshot_data:100,v8_natives_data:101 
-3929:/usr/lib/bluetooth/obexd 
-4864:Telegram -- 
-4888:/usr/libexec/xdg-document-portal 
-5137:/usr/bin/snap userd 
-5175:/usr/lib/gvfs/gvfsd-http --spawner :1.22 /org/gtk/gvfs/exec_spaw/1 
-5863:/sbin/wpa_supplicant -u -s -O /run/wpa_supplicant 
-5935:/opt/google/chrome/chrome --type=renderer --field-trial-handle=1046125550556321752,1972397289871081168,131072 --service-pipe-token=15355340871313385053 --lang=ru --enable-crash-reporter=18c08150-3029-47f9-af6d-2f63424e8d04, --enable-offline-auto-reload --enable-offline-auto-reload-visible-only --num-raster-threads=4 --enable-main-frame-before-activation --service-request-channel-token=15355340871313385053 --renderer-client-id=2325 --no-v8-untrusted-code-mitigations --shared-files=v8_context_snapshot_data:100,v8_natives_data:101 
-6048:/opt/google/chrome/chrome --type=renderer --field-trial-handle=1046125550556321752,1972397289871081168,131072 --service-pipe-token=4742343385440923201 --lang=ru --enable-crash-reporter=18c08150-3029-47f9-af6d-2f63424e8d04, --enable-offline-auto-reload --enable-offline-auto-reload-visible-only --num-raster-threads=4 --enable-main-frame-before-activation --service-request-channel-token=4742343385440923201 --renderer-client-id=2330 --no-v8-untrusted-code-mitigations --shared-files=v8_context_snapshot_data:100,v8_natives_data:101 
-6351:/opt/google/chrome/chrome --type=renderer --field-trial-handle=1046125550556321752,1972397289871081168,131072 --service-pipe-token=9757110927565671512 --lang=ru --enable-crash-reporter=18c08150-3029-47f9-af6d-2f63424e8d04, --enable-offline-auto-reload --enable-offline-auto-reload-visible-only --num-raster-threads=4 --enable-main-frame-before-activation --service-request-channel-token=9757110927565671512 --renderer-client-id=2332 --no-v8-untrusted-code-mitigations --shared-files=v8_context_snapshot_data:100,v8_natives_data:101 
-6952:[loop26] 
-8228:Telegram -- 
-9941:/opt/google/chrome/chrome --type=renderer --field-trial-handle=1046125550556321752,1972397289871081168,131072 --service-pipe-token=3139092416813254844 --lang=ru --enable-crash-reporter=18c08150-3029-47f9-af6d-2f63424e8d04, --enable-offline-auto-reload --enable-offline-auto-reload-visible-only --num-raster-threads=4 --enable-main-frame-before-activation --service-request-channel-token=3139092416813254844 --renderer-client-id=1479 --no-v8-untrusted-code-mitigations --shared-files=v8_context_snapshot_data:100,v8_natives_data:101 
-10023:/opt/google/chrome/chrome --type=renderer --field-trial-handle=1046125550556321752,1972397289871081168,131072 --service-pipe-token=11595157283959802462 --lang=ru --enable-crash-reporter=18c08150-3029-47f9-af6d-2f63424e8d04, --extension-process --enable-offline-auto-reload --enable-offline-auto-reload-visible-only --num-raster-threads=4 --enable-main-frame-before-activation --service-request-channel-token=11595157283959802462 --renderer-client-id=1482 --no-v8-untrusted-code-mitigations --shared-files=v8_context_snapshot_data:100,v8_natives_data:101 
-10044:/opt/google/chrome/chrome --type=ppapi --field-trial-handle=1046125550556321752,1972397289871081168,131072 --ppapi-flash-args --lang=ru --enable-crash-reporter=18c08150-3029-47f9-af6d-2f63424e8d04, --service-request-channel-token=8056413661885348317 
-10593:/home/oktet/Загрузки/idea-IU-183.5429.30/jre64/bin/java -Djava.awt.headless=true -Didea.version==2018.3.4 -Xmx768m -Didea.maven.embedder.version=3.3.9 -Dfile.encoding=UTF-8 -classpath /home/oktet/Загрузки/idea-IU-183.5429.30/lib/resources_en.jar:/home/oktet/Загрузки/idea-IU-183.5429.30/lib/log4j.jar:/home/oktet/Загрузки/idea-IU-183.5429.30/lib/util.jar:/home/oktet/Загрузки/idea-IU-183.5429.30/lib/annotations.jar:/home/oktet/Загрузки/idea-IU-183.5429.30/lib/jdom.jar:/home/oktet/Загрузки/idea-IU-183.5429.30/lib/trove4j.jar:/home/oktet/Загрузки/idea-IU-183.5429.30/plugins/maven/lib/lucene-core-2.4.1.jar:/home/oktet/Загрузки/idea-IU-183.5429.30/plugins/maven/lib/maven-server-api.jar:/home/oktet/Загрузки/idea-IU-183.5429.30/plugins/maven/lib/maven3-server-common.jar:/home/oktet/Загрузки/idea-IU-183.5429.30/plugins/maven/lib/maven3-server-lib/nexus-indexer-3.0.4.jar:/home/oktet/Загрузки/idea-IU-183.5429.30/plugins/maven/lib/maven3-server-lib/nexus-indexer-artifact-1.0.1.jar:/home/oktet/Загрузки/idea-IU-183.5429.30/plugins/maven/lib/maven3-server-lib/archetype-common-2.2.jar:/home/oktet/Загрузки/idea-IU-183.5429.30/plugins/maven/lib/maven3-server-lib/maven-dependency-tree-1.2.jar:/home/oktet/Загрузки/idea-IU-183.5429.30/plugins/maven/lib/maven3-server-lib/archetype-catalog-2.2.jar:/home/oktet/Загрузки/idea-IU-183.5429.30/plugins/maven/lib/maven3-server-impl.jar:/home/oktet/Загрузки/idea-IU-183.5429.30/plugins/maven/lib/maven3/lib/maven-embedder-3.3.9.jar:/home/oktet/Загрузки/idea-IU-183.5429.30/plugins/maven/lib/maven3/lib/plexus-interpolation-1.21.jar:/home/oktet/Загрузки/idea-IU-183.5429.30/plugins/maven/lib/maven3/lib/aopalliance-1.0.jar:/home/oktet/Загрузки/idea-IU-183.5429.30/plugins/maven/lib/maven3/lib/aether-impl-1.0.2.v20150114.jar:/home/oktet/Загрузки/idea-IU-183.5429.30/plugins/maven/lib/maven3/lib/cdi-api-1.0.jar:/home/oktet/Загрузки/idea-IU-183.5429.30/plugins/maven/lib/maven3/lib/aether-transport-wagon-1.0.2.v20150114.jar:/home/oktet/Загрузки/idea-IU-183.5429.30/plugins/maven/lib/maven3/lib/maven-artifact-3.3.9.jar:/home/oktet/Загрузки/idea-IU-183.5429.30/plugins/maven/lib/maven3/lib/guice-4.0-no_aop.jar:/home/oktet/Загрузки/idea-IU-183.5429.30/plugins/maven/lib/maven3/lib/maven-settings-3.3.9.jar:/home/oktet/Загрузки/idea-IU-183.5429.30/plugins/maven/lib/maven3/lib/wagon-provider-api-2.10.jar:/home/oktet/Загрузки/idea-IU-183.5429.30/plugins/maven/lib/maven3/lib/javax.inject-1.jar:/home/oktet/Загрузки/idea-IU-183.5429.30/plugins/maven/lib/maven3/lib/maven-compat-3.3.9.jar:/home/oktet/Загрузки/idea-IU-183.5429.30/plugins/maven/lib/maven3/lib/org.eclipse.sisu.inject-0.3.2.jar:/home/oktet/Загрузки/idea-IU-183.5429.30/plugins/maven/lib/maven3/lib/wagon-http-shared-2.10.jar:/home/oktet/Загрузки/idea-IU-183.5429.30/plugins/maven/lib/maven3/lib/maven-settings-builder-3.3.9.jar:/home/oktet/Загрузки/idea-IU-183.5429.30/plugins/maven/lib/maven3/lib/commons-cli-1.2.jar:/home/oktet/Загрузки/idea-IU-183.5429.30/plugins/maven/lib/maven3/lib/maven-repository-metadata-3.3.9.jar:/home/oktet/Загрузки/idea-IU-183.5429.30/plugins/maven/lib/maven3/lib/commons-lang3-3.4.jar:/home/oktet/Загрузки/idea-IU-183.5429.30/plugins/maven/lib/maven3/lib/slf4j-api-1.7.5.jar:/home/oktet/Загрузки/idea-IU-183.5429.30/plugins/maven/lib/maven3/lib/wagon-file-2.10.jar:/home/oktet/Загрузки/idea-IU-183.5429.30/plugins/maven/lib/maven3/lib/maven-plugin-api-3.3.9.jar:/home/oktet/Загрузки/idea-IU-183.5429.30/plugins/maven/lib/maven3/lib/aether-connector-basic-1.0.2.v20150114.jar:/home/oktet/Загрузки/idea-IU-183.5429.30/plugins/maven/lib/maven3/lib/plexus-utils-3.0.22.jar:/home/oktet/Загрузки/idea-IU-183.5429.30/plugins/maven/lib/maven3/lib/aether-spi-1.0.2.v20150114.jar:/home/oktet/Загрузки/idea-IU-183.5429.30/plugins/maven/lib/maven3/lib/plexus-cipher-1.7.jar:/home/oktet/Загрузки/idea-IU-183.5429.30/plugins/maven/lib/maven3/lib/wagon-http-2.10-shaded.jar:/home/oktet/Загрузки/idea-IU-183.5429.30/plugins/maven/lib/maven3/lib/org.eclipse.sisu.plexus-0.3.2.jar:/home/oktet/Загрузки/idea-IU-183.5429.30/plugins/maven/lib/maven3/lib/maven-model-3.3.9.jar:/home/oktet/Загрузки/idea-IU-183.5429.30/plugins/maven/lib/maven3/lib/guava-18.0.jar:/home/oktet/Загрузки/idea-IU-183.5429.30/plugins/maven/lib/maven3/lib/plexus-sec-dispatcher-1.3.jar:/home/oktet/Загрузки/idea-IU-183.5429.30/plugins/maven/lib/maven3/lib/jsoup-1.7.2.jar:/home/oktet/Загрузки/idea-IU-183.5429.30/plugins/maven/lib/maven3/lib/maven-aether-provider-3.3.9.jar:/home/oktet/Загрузки/idea-IU-183.5429.30/plugins/maven/lib/maven3/lib/maven-core-3.3.9.jar:/home/oktet/Загрузки/idea-IU-183.5429.30/plugins/maven/lib/maven3/lib/commons-io-2.2.jar:/home/oktet/Загрузки/idea-IU-183.5429.30/plugins/maven/lib/maven3/lib/jsr250-api-1.0.jar:/home/oktet/Загрузки/idea-IU-183.5429.30/plugins/maven/lib/maven3/lib/aether-api-1.0.2.v20150114.jar:/home/oktet/Загрузки/idea-IU-183.5429.30/plugins/maven/lib/maven3/lib/maven-builder-support-3.3.9.jar:/home/oktet/Загрузки/idea-IU-183.5429.30/plugins/maven/lib/maven3/lib/plexus-component-annotations-1.6.jar:/home/oktet/Загрузки/idea-IU-183.5429.30/plugins/maven/lib/maven3/lib/commons-lang-2.6.jar:/home/oktet/Загрузки/idea-IU-183.5429.30/plugins/maven/lib/maven3/lib/aether-util-1.0.2.v20150114.jar:/home/oktet/Загрузки/idea-IU-183.5429.30/plugins/maven/lib/maven3/lib/maven-model-builder-3.3.9.jar:/home/oktet/Загрузки/idea-IU-183.5429.30/plugins/maven/lib/maven3/lib/slf4j-simple-1.7.5.jar:/home/oktet/Загрузки/idea-IU-183.5429.30/plugins/maven/lib/maven3/boot/plexus-classworlds-2.5.2.jar org.jetbrains.idea.maven.server.RemoteMavenServer 
-10636:[kworker/u16:1] 
-11409:[kworker/5:0] 
-11473:/usr/lib/dconf/dconf-service 
-11840:[kworker/2:0] 
-12231:[kworker/4:1] 
-12407:/opt/google/chrome/chrome --type=renderer --field-trial-handle=1046125550556321752,1972397289871081168,131072 --service-pipe-token=12147228663091819602 --lang=ru --enable-crash-reporter=18c08150-3029-47f9-af6d-2f63424e8d04, --enable-offline-auto-reload --enable-offline-auto-reload-visible-only --num-raster-threads=4 --enable-main-frame-before-activation --service-request-channel-token=12147228663091819602 --renderer-client-id=1521 --no-v8-untrusted-code-mitigations --shared-files=v8_context_snapshot_data:100,v8_natives_data:101 
-12438:[kworker/3:1] 
-12575:[kworker/u16:0] 
-12622:/usr/bin/ssh-agent -D -a /run/user/1001/keyring/.ssh 
-12687:/opt/google/chrome/chrome --type=renderer --field-trial-handle=1046125550556321752,1972397289871081168,131072 --service-pipe-token=8653916522455093465 --lang=ru --enable-crash-reporter=18c08150-3029-47f9-af6d-2f63424e8d04, --enable-offline-auto-reload --enable-offline-auto-reload-visible-only --num-raster-threads=4 --enable-main-frame-before-activation --service-request-channel-token=8653916522455093465 --renderer-client-id=2504 --no-v8-untrusted-code-mitigations --shared-files=v8_context_snapshot_data:100,v8_natives_data:101 
-12849:[kworker/7:3] 
-12854:[kworker/1:6] 
-12867:[kworker/0:5] 
-12906:/opt/google/chrome/chrome --type=renderer --field-trial-handle=1046125550556321752,1972397289871081168,131072 --service-pipe-token=3861270975114741715 --lang=ru --enable-crash-reporter=18c08150-3029-47f9-af6d-2f63424e8d04, --enable-offline-auto-reload --enable-offline-auto-reload-visible-only --num-raster-threads=4 --enable-main-frame-before-activation --service-request-channel-token=3861270975114741715 --renderer-client-id=2509 --no-v8-untrusted-code-mitigations --shared-files=v8_context_snapshot_data:100,v8_natives_data:101 
-12919:/opt/google/chrome/chrome --type=renderer --field-trial-handle=1046125550556321752,1972397289871081168,131072 --service-pipe-token=16328869497901416330 --lang=ru --enable-crash-reporter=18c08150-3029-47f9-af6d-2f63424e8d04, --extension-process --enable-offline-auto-reload --enable-offline-auto-reload-visible-only --num-raster-threads=4 --enable-main-frame-before-activation --service-request-channel-token=16328869497901416330 --renderer-client-id=2510 --no-v8-untrusted-code-mitigations --shared-files=v8_context_snapshot_data:100,v8_natives_data:101 
-12940:[kworker/2:2] 
-12978:/opt/google/chrome/chrome --type=renderer --field-trial-handle=1046125550556321752,1972397289871081168,131072 --service-pipe-token=16595404757275251717 --lang=ru --enable-crash-reporter=18c08150-3029-47f9-af6d-2f63424e8d04, --enable-offline-auto-reload --enable-offline-auto-reload-visible-only --num-raster-threads=4 --enable-main-frame-before-activation --service-request-channel-token=16595404757275251717 --renderer-client-id=2513 --no-v8-untrusted-code-mitigations --shared-files=v8_context_snapshot_data:100,v8_natives_data:101 
-13136:[kworker/6:0] 
-13214:/opt/google/chrome/chrome --type=renderer --field-trial-handle=1046125550556321752,1972397289871081168,131072 --service-pipe-token=13299795073085413580 --lang=ru --enable-crash-reporter=18c08150-3029-47f9-af6d-2f63424e8d04, --enable-offline-auto-reload --enable-offline-auto-reload-visible-only --num-raster-threads=4 --enable-main-frame-before-activation --service-request-channel-token=13299795073085413580 --renderer-client-id=2520 --no-v8-untrusted-code-mitigations --shared-files=v8_context_snapshot_data:100,v8_natives_data:101 
-13248:/opt/google/chrome/chrome --type=renderer --field-trial-handle=1046125550556321752,1972397289871081168,131072 --service-pipe-token=17796305186773809523 --lang=ru --enable-crash-reporter=18c08150-3029-47f9-af6d-2f63424e8d04, --enable-offline-auto-reload --enable-offline-auto-reload-visible-only --num-raster-threads=4 --enable-main-frame-before-activation --service-request-channel-token=17796305186773809523 --renderer-client-id=2522 --no-v8-untrusted-code-mitigations --shared-files=v8_context_snapshot_data:100,v8_natives_data:101 
-13279:/opt/google/chrome/chrome --type=renderer --field-trial-handle=1046125550556321752,1972397289871081168,131072 --service-pipe-token=1693792684184988505 --lang=ru --enable-crash-reporter=18c08150-3029-47f9-af6d-2f63424e8d04, --enable-offline-auto-reload --enable-offline-auto-reload-visible-only --num-raster-threads=4 --enable-main-frame-before-activation --service-request-channel-token=1693792684184988505 --renderer-client-id=2523 --no-v8-untrusted-code-mitigations --shared-files=v8_context_snapshot_data:100,v8_natives_data:101 
-13293:/opt/google/chrome/chrome --type=renderer --field-trial-handle=1046125550556321752,1972397289871081168,131072 --service-pipe-token=2774090671219510124 --lang=ru --enable-crash-reporter=18c08150-3029-47f9-af6d-2f63424e8d04, --enable-offline-auto-reload --enable-offline-auto-reload-visible-only --num-raster-threads=4 --enable-main-frame-before-activation --service-request-channel-token=2774090671219510124 --renderer-client-id=2524 --no-v8-untrusted-code-mitigations --shared-files=v8_context_snapshot_data:100,v8_natives_data:101 
-13314:/opt/google/chrome/chrome --type=renderer --field-trial-handle=1046125550556321752,1972397289871081168,131072 --service-pipe-token=1856344204650425009 --lang=ru --enable-crash-reporter=18c08150-3029-47f9-af6d-2f63424e8d04, --enable-offline-auto-reload --enable-offline-auto-reload-visible-only --num-raster-threads=4 --enable-main-frame-before-activation --service-request-channel-token=1856344204650425009 --renderer-client-id=2525 --no-v8-untrusted-code-mitigations --shared-files=v8_context_snapshot_data:100,v8_natives_data:101 
-13361:[kworker/0:1] 
-13369:[kworker/3:2] 
-13370:[kworker/7:1] 
-13382:[kworker/1:0] 
-13396:[kworker/5:2] 
-13468:[kworker/u16:4] 
-13470:[kworker/4:2] 
-13482:[kworker/6:1] 
-13582:[kworker/3:0] 
-13615:[kworker/0:0] 
-13616:[kworker/7:0] 
-13620:/opt/google/chrome/chrome --type=renderer --field-trial-handle=1046125550556321752,1972397289871081168,131072 --service-pipe-token=13925968338156081122 --lang=ru --enable-crash-reporter=18c08150-3029-47f9-af6d-2f63424e8d04, --enable-offline-auto-reload --enable-offline-auto-reload-visible-only --num-raster-threads=4 --enable-main-frame-before-activation --service-request-channel-token=13925968338156081122 --renderer-client-id=2532 --no-v8-untrusted-code-mitigations --shared-files=v8_context_snapshot_data:100,v8_natives_data:101 
-13651:/opt/google/chrome/chrome --type=renderer --field-trial-handle=1046125550556321752,1972397289871081168,131072 --service-pipe-token=17601463159496923139 --lang=ru --enable-crash-reporter=18c08150-3029-47f9-af6d-2f63424e8d04, --enable-offline-auto-reload --enable-offline-auto-reload-visible-only --num-raster-threads=4 --enable-main-frame-before-activation --service-request-channel-token=17601463159496923139 --renderer-client-id=2534 --no-v8-untrusted-code-mitigations --shared-files=v8_context_snapshot_data:100,v8_natives_data:101 
-13687:[kworker/1:1] 
-13694:[kworker/2:1] 
-13724:[kworker/5:1] 
-13794:[kworker/u16:2] 
-13801:[kworker/6:2] 
-13803:[kworker/4:0] 
-13804:/bin/bash ./task1.sh root 
-13805:ps ax -U root 
-13806:tail -n +2 
-13807:awk {printf "%s:", $1; for(i=5;i<=NF;i++) printf "%s ", $i; print ""} 
-15610:/opt/google/chrome/chrome --type=renderer --field-trial-handle=1046125550556321752,1972397289871081168,131072 --service-pipe-token=10009416942216739097 --lang=ru --enable-crash-reporter=18c08150-3029-47f9-af6d-2f63424e8d04, --enable-offline-auto-reload --enable-offline-auto-reload-visible-only --num-raster-threads=4 --enable-main-frame-before-activation --service-request-channel-token=10009416942216739097 --renderer-client-id=1869 --no-v8-untrusted-code-mitigations --shared-files=v8_context_snapshot_data:100,v8_natives_data:101 
-16083:/opt/google/chrome/chrome --type=renderer --field-trial-handle=1046125550556321752,1972397289871081168,131072 --service-pipe-token=17317343220931946106 --lang=ru --enable-crash-reporter=18c08150-3029-47f9-af6d-2f63424e8d04, --extension-process --enable-offline-auto-reload --enable-offline-auto-reload-visible-only --num-raster-threads=4 --enable-main-frame-before-activation --service-request-channel-token=17317343220931946106 --renderer-client-id=223 --no-v8-untrusted-code-mitigations --shared-files=v8_context_snapshot_data:100,v8_natives_data:101 
-16454:/bin/sh /home/oktet/Загрузки/idea-IU-183.5429.30/bin/idea.sh 
-16520:/home/oktet/Загрузки/idea-IU-183.5429.30/jre64/bin/java -classpath /home/oktet/Загрузки/idea-IU-183.5429.30/lib/bootstrap.jar:/home/oktet/Загрузки/idea-IU-183.5429.30/lib/extensions.jar:/home/oktet/Загрузки/idea-IU-183.5429.30/lib/util.jar:/home/oktet/Загрузки/idea-IU-183.5429.30/lib/jdom.jar:/home/oktet/Загрузки/idea-IU-183.5429.30/lib/log4j.jar:/home/oktet/Загрузки/idea-IU-183.5429.30/lib/trove4j.jar:/home/oktet/Загрузки/idea-IU-183.5429.30/lib/jna.jar:/home/oktet/Загрузки/idea-IU-183.5429.30/jre64/lib/tools.jar -Xms128m -Xmx750m -XX:ReservedCodeCacheSize=240m -XX:+UseConcMarkSweepGC -XX:SoftRefLRUPolicyMSPerMB=50 -ea -Dsun.io.useCanonCaches=false -Djava.net.preferIPv4Stack=true -Djdk.http.auth.tunneling.disabledSchemes="" -XX:+HeapDumpOnOutOfMemoryError -XX:-OmitStackTraceInFastThrow -Dawt.useSystemAAFontSettings=lcd -Dsun.java2d.renderer=sun.java2d.marlin.MarlinRenderingEngine -XX:ErrorFile=/home/oktet/java_error_in_IDEA_%p.log -XX:HeapDumpPath=/home/oktet/java_error_in_IDEA.hprof -Didea.paths.selector=IntelliJIdea2018.3 -Djb.vmOptionsFile=/home/oktet/Загрузки/idea-IU-183.5429.30/bin/idea64.vmoptions -Didea.jre.check=true com.intellij.idea.Main 
-16573:/home/oktet/Загрузки/idea-IU-183.5429.30/bin/fsnotifier64 
-16734:bash /usr/bin/steam 
-16743:bash /home/oktet/.local/share/Steam/steam.sh 
-16744:tee /tmp/dumps/oktet_stdout.txt 
-18265:[irq/129-mei_me] 
-19060:/usr/lib/gnome-terminal/gnome-terminal-server 
-19077:bash 
-19078:bash 
-19185:/sbin/dhclient -d -q -sf /usr/lib/NetworkManager/nm-dhcp-helper -pf /run/dhclient-wlp2s0.pid -lf /var/lib/NetworkManager/dhclient-368498a5-58f4-4cfb-9e17-fd685e9ba58f-wlp2s0.lease -cf /var/lib/NetworkManager/dhclient-wlp2s0.conf wlp2s0 
-19322:/opt/google/chrome/chrome --type=utility --field-trial-handle=1046125550556321752,1972397289871081168,131072 --lang=ru --service-sandbox-type=utility --enable-crash-reporter=18c08150-3029-47f9-af6d-2f63424e8d04, --service-request-channel-token=5414340806156011539 --shared-files=v8_context_snapshot_data:100,v8_natives_data:101 
-19869:/home/oktet/.local/share/Steam/ubuntu12_32/steam 
-19877:/home/oktet/.local/share/Steam/ubuntu12_32/steam 
-19878:sh -c '/home/oktet/.local/share/Steam/ubuntu12_64/steamwebhelper.sh' '-lang=en_US' '-cachedir=/home/oktet/.local/share/Steam/config/htmlcache' '-steampid=19869' '-buildid=1568860339' '-steamid=0' '-steamuniverse=Dev' '-clientui=/home/oktet/.local/share/Steam/clientui' --enable-blink-features=ResizeObserver,Worklet,AudioWorklet --enable-media-stream --disable-smooth-scrolling --disable-gpu-compositing --disable-gpu '--log-file=/home/oktet/.local/share/Steam/logs/cef_log.txt' 
-19880:/bin/bash /home/oktet/.local/share/Steam/ubuntu12_64/steamwebhelper.sh -lang=en_US -cachedir=/home/oktet/.local/share/Steam/config/htmlcache -steampid=19869 -buildid=1568860339 -steamid=0 -steamuniverse=Dev -clientui=/home/oktet/.local/share/Steam/clientui --enable-blink-features=ResizeObserver,Worklet,AudioWorklet --enable-media-stream --disable-smooth-scrolling --disable-gpu-compositing --disable-gpu --log-file=/home/oktet/.local/share/Steam/logs/cef_log.txt 
-19895:./steamwebhelper -lang=en_US -cachedir=/home/oktet/.local/share/Steam/config/htmlcache -steampid=19869 -buildid=1568860339 -steamid=0 -steamuniverse=Dev -clientui=/home/oktet/.local/share/Steam/clientui --enable-blink-features=ResizeObserver,Worklet,AudioWorklet --enable-media-stream --disable-smooth-scrolling --disable-gpu-compositing --disable-gpu --log-file=/home/oktet/.local/share/Steam/logs/cef_log.txt 
-19899:/home/oktet/.local/share/Steam/ubuntu12_64/steamwebhelper --type=zygote --no-sandbox --log-file=/home/oktet/.local/share/Steam/logs/cef_log.txt --product-version=Valve Steam Client --lang=en_US.UTF-8 
-19970:/home/oktet/.local/share/Steam/ubuntu12_64/steamwebhelper --type=gpu-process --field-trial-handle=6938674591277726715,11875894057200175822,131072 --no-sandbox --log-file=/home/oktet/.local/share/Steam/logs/cef_log.txt --product-version=Valve Steam Client --lang=en_US.UTF-8 --gpu-preferences=KAAAAAAAAACAAACAAQAAAAAAAAAAAGAAAAAAAAAAAAAIAAAAAAAAAAgAAAAAAAAA --use-gl=swiftshader-webgl --service-request-channel-token=1819268736007261648 
-19973:/home/oktet/.local/share/Steam/ubuntu12_64/steamwebhelper --type=renderer --no-sandbox --field-trial-handle=6938674591277726715,11875894057200175822,131072 --disable-gpu-compositing --service-pipe-token=3524156430347223577 --enable-blink-features=ResizeObserver,Worklet,AudioWorklet --lang=ru --log-file=/home/oktet/.local/share/Steam/logs/cef_log.txt --product-version=Valve Steam Client --num-raster-threads=4 --enable-main-frame-before-activation --service-request-channel-token=3524156430347223577 --renderer-client-id=2 --shared-files=v8_context_snapshot_data:100,v8_natives_data:101 
-20016:/home/oktet/.local/share/Steam/ubuntu12_64/steamwebhelper --type=renderer --no-sandbox --field-trial-handle=6938674591277726715,11875894057200175822,131072 --disable-gpu-compositing --service-pipe-token=204990643706655504 --enable-blink-features=ResizeObserver,Worklet,AudioWorklet --lang=ru --log-file=/home/oktet/.local/share/Steam/logs/cef_log.txt --product-version=Valve Steam Client --num-raster-threads=4 --enable-main-frame-before-activation --service-request-channel-token=204990643706655504 --renderer-client-id=4 --shared-files=v8_context_snapshot_data:100,v8_natives_data:101 
-20842:[kworker/u17:1] 
-23578:/opt/google/chrome/chrome --type=renderer --field-trial-handle=1046125550556321752,1972397289871081168,131072 --service-pipe-token=6204618041530067676 --lang=ru --enable-crash-reporter=18c08150-3029-47f9-af6d-2f63424e8d04, --enable-offline-auto-reload --enable-offline-auto-reload-visible-only --num-raster-threads=4 --enable-main-frame-before-activation --service-request-channel-token=6204618041530067676 --renderer-client-id=2020 --no-v8-untrusted-code-mitigations --shared-files=v8_context_snapshot_data:100,v8_natives_data:101 
-23774:/opt/google/chrome/chrome --type=renderer --field-trial-handle=1046125550556321752,1972397289871081168,131072 --service-pipe-token=8519555303890484173 --lang=ru --enable-crash-reporter=18c08150-3029-47f9-af6d-2f63424e8d04, --extension-process --enable-offline-auto-reload --enable-offline-auto-reload-visible-only --num-raster-threads=4 --enable-main-frame-before-activation --service-request-channel-token=8519555303890484173 --renderer-client-id=2022 --no-v8-untrusted-code-mitigations --shared-files=v8_context_snapshot_data:100,v8_natives_data:101 
-24055:/usr/bin/nautilus --gapplication-service 
-24260:/usr/lib/gvfs/gvfsd-recent --spawner :1.22 /org/gtk/gvfs/exec_spaw/4 
-25035:/opt/Riot/riot-web 
-25038:/opt/Riot/riot-web --type=zygote --no-sandbox 
-25070:/opt/Riot/riot-web --type=gpu-process --enable-features=SharedArrayBuffer --no-sandbox --gpu-preferences=KAAAAAAAAACAAABAAQAAAAAAAAAAAGAAAAAAAAAAAAAIAAAAAAAAAAgAAAAAAAAA --service-request-channel-token=3978098309506626771 
-25072:/opt/Riot/riot-web --type=renderer --no-sandbox --enable-features=SharedArrayBuffer --service-pipe-token=16652057691446482485 --lang=ru --standard-schemes=vector --secure-schemes=vector --app-path=/opt/Riot/resources/app.asar --node-integration=false --webview-tag=false --enable-sandbox --preload=/opt/Riot/resources/app.asar/src/preload.js --disable-remote-module --background-color=#fff --num-raster-threads=4 --enable-main-frame-before-activation --service-request-channel-token=16652057691446482485 --renderer-client-id=4 --shared-files=v8_context_snapshot_data:100,v8_natives_data:101 
-27829:gdm-session-worker [pam/gdm-password] 
-28545:/usr/sbin/cupsd -l 
-28546:/usr/sbin/cups-browsed 
-28558:[kworker/u17:3] 
-29364:/opt/google/chrome/chrome --type=renderer --field-trial-handle=1046125550556321752,1972397289871081168,131072 --service-pipe-token=13991276010488199709 --lang=ru --enable-crash-reporter=18c08150-3029-47f9-af6d-2f63424e8d04, --enable-offline-auto-reload --enable-offline-auto-reload-visible-only --num-raster-threads=4 --enable-main-frame-before-activation --service-request-channel-token=13991276010488199709 --renderer-client-id=2170 --no-v8-untrusted-code-mitigations --shared-files=v8_context_snapshot_data:100,v8_natives_data:101 
-29381:/opt/google/chrome/chrome --type=renderer --field-trial-handle=1046125550556321752,1972397289871081168,131072 --service-pipe-token=17355574175458677077 --lang=ru --enable-crash-reporter=18c08150-3029-47f9-af6d-2f63424e8d04, --enable-offline-auto-reload --enable-offline-auto-reload-visible-only --num-raster-threads=4 --enable-main-frame-before-activation --service-request-channel-token=17355574175458677077 --renderer-client-id=2171 --no-v8-untrusted-code-mitigations --shared-files=v8_context_snapshot_data:100,v8_natives_data:101 
-30122:/usr/lib/cups/notifier/dbus dbus:// 
+1619:/opt/google/chrome/chrome --type=renderer --field-trial-handle=4922355318453878122,4665084297472290135,131072 --service-pipe-token=3123034578232082456 --lang=ru --enable-crash-reporter=18c08150-3029-47f9-af6d-2f63424e8d04, --enable-offline-auto-reload --enable-offline-auto-reload-visible-only --num-raster-threads=4 --enable-main-frame-before-activation --service-request-channel-token=3123034578232082456 --renderer-client-id=540 --no-v8-untrusted-code-mitigations --shared-files=v8_context_snapshot_data:100,v8_natives_data:101 
+1632:/opt/google/chrome/chrome --type=renderer --field-trial-handle=4922355318453878122,4665084297472290135,131072 --service-pipe-token=8074466914699143166 --lang=ru --enable-crash-reporter=18c08150-3029-47f9-af6d-2f63424e8d04, --enable-offline-auto-reload --enable-offline-auto-reload-visible-only --num-raster-threads=4 --enable-main-frame-before-activation --service-request-channel-token=8074466914699143166 --renderer-client-id=541 --no-v8-untrusted-code-mitigations --shared-files=v8_context_snapshot_data:100,v8_natives_data:101 
+2274:/usr/bin/snap userd 
+2299:/usr/lib/gvfs/gvfsd-http --spawner :1.22 /org/gtk/gvfs/exec_spaw/8 
+2401:/opt/google/chrome/chrome --type=renderer --field-trial-handle=4922355318453878122,4665084297472290135,131072 --service-pipe-token=8821360504205189030 --lang=ru --enable-crash-reporter=18c08150-3029-47f9-af6d-2f63424e8d04, --extension-process --enable-offline-auto-reload --enable-offline-auto-reload-visible-only --num-raster-threads=4 --enable-main-frame-before-activation --service-request-channel-token=8821360504205189030 --renderer-client-id=552 --no-v8-untrusted-code-mitigations --shared-files=v8_context_snapshot_data:100,v8_natives_data:101 
+2445:/usr/lib/libreoffice/program/oosplash --writer file:///home/oktet/%D0%97%D0%B0%D0%B3%D1%80%D1%83%D0%B7%D0%BA%D0%B8/Telegram%20Desktop/CAE-CPE%20questions.docx 
+2464:/usr/lib/libreoffice/program/soffice.bin --writer file:///home/oktet/%D0%97%D0%B0%D0%B3%D1%80%D1%83%D0%B7%D0%BA%D0%B8/Telegram%20Desktop/CAE-CPE%20questions.docx --splash-pipe=5 
+2617:/opt/google/chrome/chrome --type=renderer --field-trial-handle=4922355318453878122,4665084297472290135,131072 --service-pipe-token=13410374173511421505 --lang=ru --enable-crash-reporter=18c08150-3029-47f9-af6d-2f63424e8d04, --extension-process --enable-offline-auto-reload --enable-offline-auto-reload-visible-only --num-raster-threads=4 --enable-main-frame-before-activation --service-request-channel-token=13410374173511421505 --renderer-client-id=553 --no-v8-untrusted-code-mitigations --shared-files=v8_context_snapshot_data:100,v8_natives_data:101 
+2785:/opt/google/chrome/chrome --type=renderer --field-trial-handle=4922355318453878122,4665084297472290135,131072 --service-pipe-token=12193200054631310430 --lang=ru --enable-crash-reporter=18c08150-3029-47f9-af6d-2f63424e8d04, --extension-process --enable-offline-auto-reload --enable-offline-auto-reload-visible-only --num-raster-threads=4 --enable-main-frame-before-activation --service-request-channel-token=12193200054631310430 --renderer-client-id=556 --no-v8-untrusted-code-mitigations --shared-files=v8_context_snapshot_data:100,v8_natives_data:101 
+2911:/lib/systemd/systemd --user 
+2912:(sd-pam) 
+2925:/usr/bin/gnome-keyring-daemon --daemonize --login 
+2929:/usr/lib/gdm3/gdm-x-session --run-script env GNOME_SHELL_SESSION_MODE=ubuntu gnome-session --session=ubuntu 
+2931:/usr/lib/xorg/Xorg vt2 -displayfd 3 -auth /run/user/1001/gdm/Xauthority -background none -noreset -keeptty -verbose 3 
+2939:/usr/bin/dbus-daemon --session --address=systemd: --nofork --nopidfile --systemd-activation --syslog-only 
+2942:/usr/lib/gnome-session/gnome-session-binary --session=ubuntu 
+3048:/usr/bin/ssh-agent /usr/bin/im-launch env GNOME_SHELL_SESSION_MODE=ubuntu gnome-session --session=ubuntu 
+3051:/usr/lib/at-spi2-core/at-spi-bus-launcher 
+3056:/usr/bin/dbus-daemon --config-file=/usr/share/defaults/at-spi2/accessibility.conf --nofork --print-address 3 
+3058:/usr/lib/at-spi2-core/at-spi2-registryd --use-gnome-session 
+3074:/usr/lib/gvfs/gvfsd 
+3079:/usr/lib/gvfs/gvfsd-fuse /run/user/1001/gvfs -f -o big_writes 
+3096:/usr/bin/gnome-shell 
+3108:/usr/bin/pulseaudio --start --log-target=syslog 
+3127:ibus-daemon --xim --panel disable 
+3131:/usr/lib/ibus/ibus-dconf 
+3133:/usr/lib/ibus/ibus-x11 --kill-daemon 
+3135:/usr/lib/ibus/ibus-portal 
+3144:/usr/libexec/xdg-permission-store 
+3150:/usr/lib/gnome-shell/gnome-shell-calendar-server 
+3154:/usr/lib/evolution/evolution-source-registry 
+3162:/usr/lib/gnome-online-accounts/goa-daemon 
+3166:gedit 
+3169:/usr/lib/gvfs/gvfs-udisks2-volume-monitor 
+3178:/usr/lib/gnome-online-accounts/goa-identity-service 
+3183:/usr/lib/gvfs/gvfs-mtp-volume-monitor 
+3187:/usr/lib/gvfs/gvfs-afc-volume-monitor 
+3192:/usr/lib/gvfs/gvfs-gphoto2-volume-monitor 
+3196:/usr/lib/gvfs/gvfs-goa-volume-monitor 
+3208:/usr/lib/gnome-settings-daemon/gsd-power 
+3209:/usr/lib/gnome-settings-daemon/gsd-print-notifications 
+3210:/usr/lib/gnome-settings-daemon/gsd-rfkill 
+3211:/usr/lib/gnome-settings-daemon/gsd-screensaver-proxy 
+3212:/usr/lib/gnome-settings-daemon/gsd-sharing 
+3217:/usr/lib/gnome-settings-daemon/gsd-xsettings 
+3220:/usr/lib/gnome-settings-daemon/gsd-wacom 
+3232:/usr/lib/gnome-settings-daemon/gsd-smartcard 
+3237:/usr/lib/gnome-settings-daemon/gsd-sound 
+3252:/usr/lib/gnome-settings-daemon/gsd-clipboard 
+3254:/usr/lib/gnome-settings-daemon/gsd-a11y-settings 
+3255:/usr/lib/gnome-settings-daemon/gsd-datetime 
+3258:/usr/lib/gnome-settings-daemon/gsd-color 
+3261:/usr/lib/gnome-settings-daemon/gsd-keyboard 
+3264:/usr/lib/gnome-settings-daemon/gsd-housekeeping 
+3266:/usr/lib/gnome-settings-daemon/gsd-mouse 
+3273:/usr/lib/gnome-settings-daemon/gsd-media-keys 
+3307:/usr/lib/gnome-settings-daemon/gsd-printer 
+3312:/usr/lib/gnome-disk-utility/gsd-disk-utility-notify 
+3313:/usr/lib/x86_64-linux-gnu/indicator-messages/indicator-messages-service 
+3333:/usr/share/skypeforlinux/skypeforlinux --executed-from=/home/oktet --pid=3317 
+3334:nautilus-desktop 
+3357:/usr/lib/gvfs/gvfsd-trash --spawner :1.22 /org/gtk/gvfs/exec_spaw/0 
+3365:/usr/lib/evolution/evolution-calendar-factory 
+3372:/usr/share/skypeforlinux/skypeforlinux --type=zygote --no-sandbox 
+3417:/usr/lib/ibus/ibus-engine-simple 
+3426:/usr/lib/dconf/dconf-service 
+3436:/usr/lib/evolution/evolution-calendar-factory-subprocess --factory all --bus-name org.gnome.evolution.dataserver.Subprocess.Backend.Calendarx3365x2 --own-path /org/gnome/evolution/dataserver/Subprocess/Backend/Calendar/3365/2 
+3446:/usr/lib/evolution/evolution-addressbook-factory 
+3458:/usr/lib/evolution/evolution-addressbook-factory-subprocess --factory all --bus-name org.gnome.evolution.dataserver.Subprocess.Backend.AddressBookx3446x2 --own-path /org/gnome/evolution/dataserver/Subprocess/Backend/AddressBook/3446/2 
+3460:/usr/lib/x86_64-linux-gnu/gconf/gconfd-2 
+3497:/usr/share/skypeforlinux/skypeforlinux --type=gpu-process --no-sandbox --supports-dual-gpus=false --gpu-driver-bug-workarounds=1,9,27,70,84 --disable-gl-extensions=GL_KHR_blend_equation_advanced GL_KHR_blend_equation_advanced_coherent --disable-accelerated-video-decode --gpu-vendor-id=0x8086 --gpu-device-id=0x5917 --gpu-driver-vendor --gpu-driver-version --gpu-driver-date --service-request-channel-token=8D14FE07715CFD926BDFD7959BBF9D6D 
+3508:/usr/share/skypeforlinux/skypeforlinux --type=renderer --ms-disable-indexeddb-transaction-timeout --no-sandbox --service-pipe-token=AEEBB811C4F476F171DBCF052ED9FE41 --lang=ru --app-path=/usr/share/skypeforlinux/resources/app.asar --node-integration=false --webview-tag=true --no-sandbox --preload=/usr/share/skypeforlinux/resources/app.asar/Preload.js --context-id=2 --enable-pinch --num-raster-threads=4 --enable-main-frame-before-activation --content-image-texture-target=0,0,3553;0,1,3553;0,2,3553;0,3,3553;0,4,3553;0,5,3553;0,6,3553;0,7,3553;0,8,3553;0,9,3553;0,10,3553;0,11,3553;0,12,3553;0,13,3553;0,14,3553;0,15,3553;0,16,3553;0,17,3553;1,0,3553;1,1,3553;1,2,3553;1,3,3553;1,4,3553;1,5,3553;1,6,3553;1,7,3553;1,8,3553;1,9,3553;1,10,3553;1,11,3553;1,12,3553;1,13,3553;1,14,3553;1,15,3553;1,16,3553;1,17,3553;2,0,3553;2,1,3553;2,2,3553;2,3,3553;2,4,3553;2,5,3553;2,6,3553;2,7,3553;2,8,3553;2,9,3553;2,10,3553;2,11,3553;2,12,3553;2,13,3553;2,14,3553;2,15,3553;2,16,3553;2,17,3553;3,0,3553;3,1,3553;3,2,3553;3,3,3553;3,4,3553;3,5,3553;3,6,3553;3,7,3553;3,8,3553;3,9,3553;3,10,3553;3,11,3553;3,12,3553;3,13,3553;3,14,3553;3,15,3553;3,16,3553;3,17,3553;4,0,3553;4,1,3553;4,2,3553;4,3,3553;4,4,3553;4,5,3553;4,6,3553;4,7,3553;4,8,3553;4,9,3553;4,10,3553;4,11,3553;4,12,3553;4,13,3553;4,14,3553;4,15,3553;4,16,3553;4,17,3553 --disable-accelerated-video-decode --enable-gpu-async-worker-context --service-request-channel-token=AEEBB811C4F476F171DBCF052ED9FE41 --renderer-client-id=4 --shared-files=v8_natives_data:100,v8_snapshot_data:101 --skype-process-type=Main 
+3534:/usr/lib/gvfs/gvfsd-metadata 
+3875:/usr/bin/zeitgeist-daemon 
+3882:zeitgeist-datahub 
+3883:/usr/lib/zeitgeist/zeitgeist/zeitgeist-fts 
+3910:/usr/bin/nautilus --gapplication-service 
+3933:/usr/bin/gnome-software --gapplication-service 
+3936:update-notifier 
+4190:/usr/lib/deja-dup/deja-dup-monitor 
+7720:bash 
+8643:/bin/bash ./task1.sh 
+8644:ps x -U oktet 
+8645:tail -n +2 
+8646:awk {printf "%s:", $1; for(i=5;i<=NF;i++) printf "%s ", $i; print ""} 
+10290:/opt/google/chrome/chrome 
+10297:cat 
+10298:cat 
+10301:/opt/google/chrome/chrome --type=zygote --enable-crash-reporter=18c08150-3029-47f9-af6d-2f63424e8d04, 
+10303:/opt/google/chrome/nacl_helper 
+10306:/opt/google/chrome/chrome --type=zygote --enable-crash-reporter=18c08150-3029-47f9-af6d-2f63424e8d04, 
+10332:/opt/google/chrome/chrome --type=gpu-process --field-trial-handle=4922355318453878122,4665084297472290135,131072 --enable-crash-reporter=18c08150-3029-47f9-af6d-2f63424e8d04, --gpu-preferences=KAAAAAAAAACAAACAAQAAAAAAAAAAAGAAAAAAAAAAAAAIAAAAAAAAAAgAAAAAAAAA --enable-crash-reporter=18c08150-3029-47f9-af6d-2f63424e8d04, --service-request-channel-token=5809146834422306886 
+10462:/opt/google/chrome/chrome --type=renderer --field-trial-handle=4922355318453878122,4665084297472290135,131072 --service-pipe-token=11124712615978727219 --lang=ru --enable-crash-reporter=18c08150-3029-47f9-af6d-2f63424e8d04, --extension-process --enable-offline-auto-reload --enable-offline-auto-reload-visible-only --num-raster-threads=4 --enable-main-frame-before-activation --service-request-channel-token=11124712615978727219 --renderer-client-id=3 --no-v8-untrusted-code-mitigations --shared-files=v8_context_snapshot_data:100,v8_natives_data:101 
+10550:/opt/google/chrome/chrome --type=renderer --field-trial-handle=4922355318453878122,4665084297472290135,131072 --service-pipe-token=2814047872847426338 --lang=ru --enable-crash-reporter=18c08150-3029-47f9-af6d-2f63424e8d04, --extension-process --enable-offline-auto-reload --enable-offline-auto-reload-visible-only --num-raster-threads=4 --enable-main-frame-before-activation --service-request-channel-token=2814047872847426338 --renderer-client-id=4 --no-v8-untrusted-code-mitigations --shared-files=v8_context_snapshot_data:100,v8_natives_data:101 
+10563:/opt/google/chrome/chrome --type=renderer --field-trial-handle=4922355318453878122,4665084297472290135,131072 --service-pipe-token=16516359425024597488 --lang=ru --enable-crash-reporter=18c08150-3029-47f9-af6d-2f63424e8d04, --extension-process --enable-offline-auto-reload --enable-offline-auto-reload-visible-only --num-raster-threads=4 --enable-main-frame-before-activation --service-request-channel-token=16516359425024597488 --renderer-client-id=5 --no-v8-untrusted-code-mitigations --shared-files=v8_context_snapshot_data:100,v8_natives_data:101 
+10571:/opt/google/chrome/chrome --type=renderer --field-trial-handle=4922355318453878122,4665084297472290135,131072 --service-pipe-token=3726069693626494162 --lang=ru --enable-crash-reporter=18c08150-3029-47f9-af6d-2f63424e8d04, --extension-process --enable-offline-auto-reload --enable-offline-auto-reload-visible-only --num-raster-threads=4 --enable-main-frame-before-activation --service-request-channel-token=3726069693626494162 --renderer-client-id=6 --no-v8-untrusted-code-mitigations --shared-files=v8_context_snapshot_data:100,v8_natives_data:101 
+10595:/opt/google/chrome/chrome --type=renderer --field-trial-handle=4922355318453878122,4665084297472290135,131072 --service-pipe-token=4383650648582675042 --lang=ru --enable-crash-reporter=18c08150-3029-47f9-af6d-2f63424e8d04, --extension-process --enable-offline-auto-reload --enable-offline-auto-reload-visible-only --num-raster-threads=4 --enable-main-frame-before-activation --service-request-channel-token=4383650648582675042 --renderer-client-id=7 --no-v8-untrusted-code-mitigations --shared-files=v8_context_snapshot_data:100,v8_natives_data:101 
+10953:/usr/lib/gvfs/gvfsd-network --spawner :1.22 /org/gtk/gvfs/exec_spaw/2 
+10982:/usr/lib/gvfs/gvfsd-dnssd --spawner :1.22 /org/gtk/gvfs/exec_spaw/7 
+11404:/opt/google/chrome/chrome --type=renderer --field-trial-handle=4922355318453878122,4665084297472290135,131072 --service-pipe-token=12431351830058887642 --lang=ru --enable-crash-reporter=18c08150-3029-47f9-af6d-2f63424e8d04, --enable-offline-auto-reload --enable-offline-auto-reload-visible-only --num-raster-threads=4 --enable-main-frame-before-activation --service-request-channel-token=12431351830058887642 --renderer-client-id=720 --no-v8-untrusted-code-mitigations --shared-files=v8_context_snapshot_data:100,v8_natives_data:101 
+14366:/opt/google/chrome/chrome --type=renderer --field-trial-handle=4922355318453878122,4665084297472290135,131072 --service-pipe-token=4144582858361887818 --lang=ru --enable-crash-reporter=18c08150-3029-47f9-af6d-2f63424e8d04, --enable-offline-auto-reload --enable-offline-auto-reload-visible-only --num-raster-threads=4 --enable-main-frame-before-activation --service-request-channel-token=4144582858361887818 --renderer-client-id=124 --no-v8-untrusted-code-mitigations --shared-files=v8_context_snapshot_data:100,v8_natives_data:101 
+14491:/opt/google/chrome/chrome --type=renderer --field-trial-handle=4922355318453878122,4665084297472290135,131072 --service-pipe-token=17103421356765158884 --lang=ru --enable-crash-reporter=18c08150-3029-47f9-af6d-2f63424e8d04, --enable-offline-auto-reload --enable-offline-auto-reload-visible-only --num-raster-threads=4 --enable-main-frame-before-activation --service-request-channel-token=17103421356765158884 --renderer-client-id=131 --no-v8-untrusted-code-mitigations --shared-files=v8_context_snapshot_data:100,v8_natives_data:101 
+14656:Telegram -- 
+14679:/usr/libexec/xdg-document-portal 
+16164:/opt/google/chrome/chrome --type=renderer --field-trial-handle=4922355318453878122,4665084297472290135,131072 --service-pipe-token=4896006716696452553 --lang=ru --enable-crash-reporter=18c08150-3029-47f9-af6d-2f63424e8d04, --enable-offline-auto-reload --enable-offline-auto-reload-visible-only --num-raster-threads=4 --enable-main-frame-before-activation --service-request-channel-token=4896006716696452553 --renderer-client-id=814 --no-v8-untrusted-code-mitigations --shared-files=v8_context_snapshot_data:100,v8_natives_data:101 
+16178:/opt/google/chrome/chrome --type=renderer --field-trial-handle=4922355318453878122,4665084297472290135,131072 --service-pipe-token=10318136496892459788 --lang=ru --enable-crash-reporter=18c08150-3029-47f9-af6d-2f63424e8d04, --enable-offline-auto-reload --enable-offline-auto-reload-visible-only --num-raster-threads=4 --enable-main-frame-before-activation --service-request-channel-token=10318136496892459788 --renderer-client-id=815 --no-v8-untrusted-code-mitigations --shared-files=v8_context_snapshot_data:100,v8_natives_data:101 
+16211:/opt/google/chrome/chrome --type=renderer --field-trial-handle=4922355318453878122,4665084297472290135,131072 --service-pipe-token=14601657834585201413 --lang=ru --enable-crash-reporter=18c08150-3029-47f9-af6d-2f63424e8d04, --enable-offline-auto-reload --enable-offline-auto-reload-visible-only --num-raster-threads=4 --enable-main-frame-before-activation --service-request-channel-token=14601657834585201413 --renderer-client-id=816 --no-v8-untrusted-code-mitigations --shared-files=v8_context_snapshot_data:100,v8_natives_data:101 
+16278:/opt/google/chrome/chrome --type=renderer --field-trial-handle=4922355318453878122,4665084297472290135,131072 --service-pipe-token=11437844981064597682 --lang=ru --enable-crash-reporter=18c08150-3029-47f9-af6d-2f63424e8d04, --enable-offline-auto-reload --enable-offline-auto-reload-visible-only --num-raster-threads=4 --enable-main-frame-before-activation --service-request-channel-token=11437844981064597682 --renderer-client-id=821 --no-v8-untrusted-code-mitigations --shared-files=v8_context_snapshot_data:100,v8_natives_data:101 
+16484:/opt/google/chrome/chrome --type=renderer --field-trial-handle=4922355318453878122,4665084297472290135,131072 --service-pipe-token=15220490064747785439 --lang=ru --enable-crash-reporter=18c08150-3029-47f9-af6d-2f63424e8d04, --enable-offline-auto-reload --enable-offline-auto-reload-visible-only --num-raster-threads=4 --enable-main-frame-before-activation --service-request-channel-token=15220490064747785439 --renderer-client-id=833 --no-v8-untrusted-code-mitigations --shared-files=v8_context_snapshot_data:100,v8_natives_data:101 
+16582:/opt/google/chrome/chrome --type=renderer --field-trial-handle=4922355318453878122,4665084297472290135,131072 --service-pipe-token=13376500647803373994 --lang=ru --enable-crash-reporter=18c08150-3029-47f9-af6d-2f63424e8d04, --enable-offline-auto-reload --enable-offline-auto-reload-visible-only --num-raster-threads=4 --enable-main-frame-before-activation --service-request-channel-token=13376500647803373994 --renderer-client-id=838 --no-v8-untrusted-code-mitigations --shared-files=v8_context_snapshot_data:100,v8_natives_data:101 
+16795:/opt/google/chrome/chrome --type=renderer --field-trial-handle=4922355318453878122,4665084297472290135,131072 --service-pipe-token=13392929998223121796 --lang=ru --enable-crash-reporter=18c08150-3029-47f9-af6d-2f63424e8d04, --enable-offline-auto-reload --enable-offline-auto-reload-visible-only --num-raster-threads=4 --enable-main-frame-before-activation --service-request-channel-token=13392929998223121796 --renderer-client-id=848 --no-v8-untrusted-code-mitigations --shared-files=v8_context_snapshot_data:100,v8_natives_data:101 
+18206:/opt/google/chrome/chrome --type=renderer --field-trial-handle=4922355318453878122,4665084297472290135,131072 --service-pipe-token=11754454512654654219 --lang=ru --enable-crash-reporter=18c08150-3029-47f9-af6d-2f63424e8d04, --enable-offline-auto-reload --enable-offline-auto-reload-visible-only --num-raster-threads=4 --enable-main-frame-before-activation --service-request-channel-token=11754454512654654219 --renderer-client-id=898 --no-v8-untrusted-code-mitigations --shared-files=v8_context_snapshot_data:100,v8_natives_data:101 
+18226:/opt/google/chrome/chrome --type=renderer --field-trial-handle=4922355318453878122,4665084297472290135,131072 --service-pipe-token=10745823355966104314 --lang=ru --enable-crash-reporter=18c08150-3029-47f9-af6d-2f63424e8d04, --enable-offline-auto-reload --enable-offline-auto-reload-visible-only --num-raster-threads=4 --enable-main-frame-before-activation --service-request-channel-token=10745823355966104314 --renderer-client-id=899 --no-v8-untrusted-code-mitigations --shared-files=v8_context_snapshot_data:100,v8_natives_data:101 
+18253:/opt/google/chrome/chrome --type=renderer --field-trial-handle=4922355318453878122,4665084297472290135,131072 --service-pipe-token=984986884554511343 --lang=ru --enable-crash-reporter=18c08150-3029-47f9-af6d-2f63424e8d04, --enable-offline-auto-reload --enable-offline-auto-reload-visible-only --num-raster-threads=4 --enable-main-frame-before-activation --service-request-channel-token=984986884554511343 --renderer-client-id=900 --no-v8-untrusted-code-mitigations --shared-files=v8_context_snapshot_data:100,v8_natives_data:101 
+18311:/opt/google/chrome/chrome --type=renderer --field-trial-handle=4922355318453878122,4665084297472290135,131072 --service-pipe-token=17185320115946085817 --lang=ru --enable-crash-reporter=18c08150-3029-47f9-af6d-2f63424e8d04, --enable-offline-auto-reload --enable-offline-auto-reload-visible-only --num-raster-threads=4 --enable-main-frame-before-activation --service-request-channel-token=17185320115946085817 --renderer-client-id=225 --no-v8-untrusted-code-mitigations --shared-files=v8_context_snapshot_data:100,v8_natives_data:101 
+18464:/opt/google/chrome/chrome --type=renderer --field-trial-handle=4922355318453878122,4665084297472290135,131072 --service-pipe-token=8043184222870658066 --lang=ru --enable-crash-reporter=18c08150-3029-47f9-af6d-2f63424e8d04, --enable-offline-auto-reload --enable-offline-auto-reload-visible-only --num-raster-threads=4 --enable-main-frame-before-activation --service-request-channel-token=8043184222870658066 --renderer-client-id=909 --no-v8-untrusted-code-mitigations --shared-files=v8_context_snapshot_data:100,v8_natives_data:101 
+18641:/opt/google/chrome/chrome --type=renderer --field-trial-handle=4922355318453878122,4665084297472290135,131072 --service-pipe-token=6985024141905423759 --lang=ru --enable-crash-reporter=18c08150-3029-47f9-af6d-2f63424e8d04, --enable-offline-auto-reload --enable-offline-auto-reload-visible-only --num-raster-threads=4 --enable-main-frame-before-activation --service-request-channel-token=6985024141905423759 --renderer-client-id=916 --no-v8-untrusted-code-mitigations --shared-files=v8_context_snapshot_data:100,v8_natives_data:101 
+19016:/opt/google/chrome/chrome --type=renderer --field-trial-handle=4922355318453878122,4665084297472290135,131072 --service-pipe-token=6162895922708496666 --lang=ru --enable-crash-reporter=18c08150-3029-47f9-af6d-2f63424e8d04, --enable-offline-auto-reload --enable-offline-auto-reload-visible-only --num-raster-threads=4 --enable-main-frame-before-activation --service-request-channel-token=6162895922708496666 --renderer-client-id=930 --no-v8-untrusted-code-mitigations --shared-files=v8_context_snapshot_data:100,v8_natives_data:101 
+19937:/usr/lib/gnome-shell/gnome-shell-portal-helper 
+19955:/opt/google/chrome/chrome --type=utility --field-trial-handle=4922355318453878122,4665084297472290135,131072 --lang=ru --service-sandbox-type=utility --enable-crash-reporter=18c08150-3029-47f9-af6d-2f63424e8d04, --service-request-channel-token=12369816291772748325 --shared-files=v8_context_snapshot_data:100,v8_natives_data:101 
+19965:/usr/lib/x86_64-linux-gnu/webkit2gtk-4.0/WebKitWebProcess 4 15 
+19966:/usr/lib/x86_64-linux-gnu/webkit2gtk-4.0/WebKitNetworkProcess 5 15 
+20193:/usr/lib/gvfs/gvfsd-recent --spawner :1.22 /org/gtk/gvfs/exec_spaw/9 
+21698:/usr/lib/gnome-terminal/gnome-terminal-server 
+31374:bash 
+32089:bash /usr/bin/steam 
+32098:bash /home/oktet/.local/share/Steam/steam.sh 
+32099:tee /tmp/dumps/oktet_stdout.txt 
+32502:/home/oktet/.local/share/Steam/ubuntu12_32/steam 
+32510:/home/oktet/.local/share/Steam/ubuntu12_32/steam 
+32511:sh -c '/home/oktet/.local/share/Steam/ubuntu12_64/steamwebhelper.sh' '-lang=en_US' '-cachedir=/home/oktet/.local/share/Steam/config/htmlcache' '-steampid=32502' '-buildid=1570046470' '-steamid=0' '-steamuniverse=Dev' '-clientui=/home/oktet/.local/share/Steam/clientui' --enable-blink-features=ResizeObserver,Worklet,AudioWorklet --enable-media-stream --disable-smooth-scrolling --disable-gpu-compositing --disable-gpu '--log-file=/home/oktet/.local/share/Steam/logs/cef_log.txt' 
+32512:/bin/bash /home/oktet/.local/share/Steam/ubuntu12_64/steamwebhelper.sh -lang=en_US -cachedir=/home/oktet/.local/share/Steam/config/htmlcache -steampid=32502 -buildid=1570046470 -steamid=0 -steamuniverse=Dev -clientui=/home/oktet/.local/share/Steam/clientui --enable-blink-features=ResizeObserver,Worklet,AudioWorklet --enable-media-stream --disable-smooth-scrolling --disable-gpu-compositing --disable-gpu --log-file=/home/oktet/.local/share/Steam/logs/cef_log.txt 
+32528:./steamwebhelper -lang=en_US -cachedir=/home/oktet/.local/share/Steam/config/htmlcache -steampid=32502 -buildid=1570046470 -steamid=0 -steamuniverse=Dev -clientui=/home/oktet/.local/share/Steam/clientui --enable-blink-features=ResizeObserver,Worklet,AudioWorklet --enable-media-stream --disable-smooth-scrolling --disable-gpu-compositing --disable-gpu --log-file=/home/oktet/.local/share/Steam/logs/cef_log.txt 
+32532:/home/oktet/.local/share/Steam/ubuntu12_64/steamwebhelper --type=zygote --no-sandbox --log-file=/home/oktet/.local/share/Steam/logs/cef_log.txt --product-version=Valve Steam Client --lang=en_US.UTF-8 
+32591:/home/oktet/.local/share/Steam/ubuntu12_64/steamwebhelper --type=gpu-process --field-trial-handle=11757370426853502187,3443242334669837060,131072 --no-sandbox --log-file=/home/oktet/.local/share/Steam/logs/cef_log.txt --product-version=Valve Steam Client --lang=en_US.UTF-8 --gpu-preferences=KAAAAAAAAACAAACAAQAAAAAAAAAAAGAAAAAAAAAAAAAIAAAAAAAAAAgAAAAAAAAA --use-gl=swiftshader-webgl --service-request-channel-token=8806278984422791273 
+32593:/home/oktet/.local/share/Steam/ubuntu12_64/steamwebhelper --type=renderer --no-sandbox --field-trial-handle=11757370426853502187,3443242334669837060,131072 --disable-gpu-compositing --service-pipe-token=3108327565693730760 --enable-blink-features=ResizeObserver,Worklet,AudioWorklet --lang=ru --log-file=/home/oktet/.local/share/Steam/logs/cef_log.txt --product-version=Valve Steam Client --num-raster-threads=4 --enable-main-frame-before-activation --service-request-channel-token=3108327565693730760 --renderer-client-id=2 --shared-files=v8_context_snapshot_data:100,v8_natives_data:101 
+32617:/home/oktet/.local/share/Steam/ubuntu12_64/steamwebhelper --type=renderer --no-sandbox --field-trial-handle=11757370426853502187,3443242334669837060,131072 --disable-gpu-compositing --service-pipe-token=3274412405701564875 --enable-blink-features=ResizeObserver,Worklet,AudioWorklet --lang=ru --log-file=/home/oktet/.local/share/Steam/logs/cef_log.txt --product-version=Valve Steam Client --num-raster-threads=4 --enable-main-frame-before-activation --service-request-channel-token=3274412405701564875 --renderer-client-id=4 --shared-files=v8_context_snapshot_data:100,v8_natives_data:101 

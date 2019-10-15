@@ -14,4 +14,4 @@ do
 	fi
 done
 
-sort -nr --field-separator=':' -k2 <<<$LIST >task4.out
+sort -nr --field-separator=':' -k2 <<<$LIST | head -n -1 >task4.out
