@@ -1,0 +1,10 @@
+Comparing files services.txt and SERVICES_UPDATED.TXT
+***** services.txt
+    6:  SERVICE_NAME: dmserver
+    7:  SERVICE_NAME: Dnscache
+    8:  SERVICE_NAME: ERSvc
+***** SERVICES_UPDATED.TXT
+    6:  SERVICE_NAME: dmserver
+    7:  SERVICE_NAME: ERSvc
+*****
+

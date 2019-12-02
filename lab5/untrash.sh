@@ -6,19 +6,19 @@ RESTORE=0
 if [ "$#" != 1 ]
 then
 	echo "Usage: untrash.sh TARGET_NAME"
-	exit 0
+	exit 1
 fi
 
 if [ ! -r "$DIR" ]
 then
 	echo "Trash bin was not created or not available"
-	exit 0
+	exit 1
 fi
 
 if [ ! -f "$DIR/trash.log" ]
 then
 	echo "trash.log is not readable. Unable to proceed."
-	exit 0
+	exit 1
 fi
 
 echo "Attempting to reset..."

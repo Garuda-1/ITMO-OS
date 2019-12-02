@@ -1,0 +1,1 @@
+at %1 /INTERACTIVE cmd /C start C:\LAB6\TASK2\TRANSFER.cmd

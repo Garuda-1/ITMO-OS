@@ -1,0 +1,1 @@
+sc queryex | find /I "SERVICE_NAME:" > services.txt
